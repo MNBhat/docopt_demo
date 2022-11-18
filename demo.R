@@ -10,11 +10,19 @@ Options:
 [--arg3=<arg3>]   Takes any value (this is an optional option)
 " -> doc
 
-
-
 library(docopt)
 opt <- docopt(doc)
-print(opt)
-print(typeof(opt))
+
+# +
+# define main function
+main <- function(){
+    # code for "print" of script goes here
+    
+    print(opt)
+    print(typeof(opt))
+}
 
 
+
+# call main function
+main()
